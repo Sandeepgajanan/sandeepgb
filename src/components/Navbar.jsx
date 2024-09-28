@@ -4,7 +4,7 @@ import { socialIcons } from "../constants";
 const Navbar = () => {
   return (
     <header className="w-full">
-      <nav className="max-w-screen-lg mx-auto pt-8 px-4 sm:px-6 lg:px-8">
+      <nav className="max-w-screen-lg mx-auto pt-8 px-4 max-sm:px-6 max-sm:pt-2">
         <div className="flex justify-between items-center">
           <h1 className="text-4xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 hover:from-pink-600 hover:to-purple-400 transition-all duration-300">
@@ -34,7 +34,7 @@ const Navbar = () => {
                 >
                   <path d={item.icon} />
                 </svg>
-                <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 bg-zinc-100 text-black text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100  mb-2">
+                <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 bg-zinc-100 text-black text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100  mb-2 max-sm:hidden">
                   {item.name}
                 </span>
               </a>

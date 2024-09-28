@@ -7,13 +7,7 @@ const Projects = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section
-      data-scroll-section
-      data-scroll
-      data-scroll-speed="0.1"
-      id="projects"
-      className="w-full min-h-screen "
-    >
+    <section id="projects" className="w-full min-h-screen py-5">
       <Heading text={"My Projects"} />
       <div className="flex flex-col items-center justify-center">
         <ProjectCard val={projectdata[activeIndex]} />

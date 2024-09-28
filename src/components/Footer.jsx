@@ -3,12 +3,7 @@ import Guitar from "./Guitar";
 
 const Footer = () => {
   return (
-    <footer
-      data-scroll-section
-      data-scroll
-      data-scroll-speed="0.1"
-      className="py-8 sm:py-12 relative overflow-hidden"
-    >
+    <footer className="py-8 sm:py-12 relative overflow-hidden">
       <div className="max-w-screen-lg mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-center md:text-left">

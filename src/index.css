@@ -18,25 +18,11 @@
       #e6e6fa 75%,
       #f0f8ff 100%
     );
-    transition: transform 0.3s ease-out;
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+    transition: transform 0.2s ease-in-out;
   }
 
-  @keyframes float {
-    0% {
-      transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px);
-    }
-    50% {
-      transform: perspective(1000px) rotateX(5deg) rotateY(-5deg)
-        translateY(-5px);
-    }
-    100% {
-      transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px);
-    }
-  }
-
-  .heading {
-    animation: float 6s ease-in-out infinite;
+  .heading:hover {
+    transform: perspective(1000px) rotateX(5deg) rotateY(-5deg);
   }
 
   @media (max-width: 640px) {
@@ -53,21 +39,6 @@
       #e6e6fa 50%,
       #778899 100%
     );
-    transform-style: preserve-3d;
-    transform: perspective(1000px) rotateX(10deg) rotateY(-10deg);
-    animation: float-3d 5s ease-in-out infinite;
-  }
-
-  @keyframes float-3d {
-    0%,
-    100% {
-      transform: perspective(1000px) rotateX(10deg) rotateY(-10deg)
-        translateZ(0);
-    }
-    50% {
-      transform: perspective(1000px) rotateX(-5deg) rotateY(5deg)
-        translateZ(20px);
-    }
   }
 }
 

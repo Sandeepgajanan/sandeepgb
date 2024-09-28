@@ -33,12 +33,7 @@ const About = () => {
   }, []);
 
   return (
-    <section
-      className="detail w-full h-screen select-none  max-sm:h-[90vh] max-sm:py-5 max-sm:px-3"
-      data-scroll-section
-      data-scroll
-      data-scroll-speed="-0.2"
-    >
+    <section className="detail w-full h-screen select-none  max-sm:h-[80vh] max-sm:py-5 max-sm:px-3">
       <div className="ex max-w-screen-lg mx-auto h-full w-full flex items-center justify-between pb-10 max-sm:flex-col max-sm:justify-start max-sm:gap-16">
         <Eye />
 

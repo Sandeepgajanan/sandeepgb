@@ -10,8 +10,10 @@ import Educations from "./components/Educations";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import LocomotiveScroll from "locomotive-scroll";
+
 const App = () => {
   const scroll = new LocomotiveScroll();
+
   return (
     <div className="w-full h-full text-zinc-100 bg-zinc-900 font-[ff]">
       <Loader />
