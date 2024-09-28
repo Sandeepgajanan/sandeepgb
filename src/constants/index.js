@@ -92,7 +92,7 @@ export const socialIcons = [
   },
   {
     name: "Resume",
-    href: "https://drive.google.com/file/d/1bBKkODBAA9zH4FpjVtqsk-AZfV5l3yXp/view?usp=sharing",
+    href: "https://docs.google.com/document/d/1aXT46L13YtpJUcEd8P0skVubTEP7P3rIQGtpCeV_Ol8/edit?usp=sharing",
     icon: "M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z M14 2v6h6 M16 13H8 M16 17H8 M10 9H9H8",
   },
 ];
