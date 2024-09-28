@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { projectdata } from "../constants";
-import Projectcard from "./Projectcard";
+import ProjectCard from "./ProjectCard";
 import Heading from "./Heading";
 
 const Projects = () => {
@@ -16,7 +16,7 @@ const Projects = () => {
     >
       <Heading text={"My Projects"} />
       <div className="flex flex-col items-center justify-center">
-        <Projectcard val={projectdata[activeIndex]} />
+        <ProjectCard val={projectdata[activeIndex]} />
 
         <div className="flex justify-center mt-8">
           {projectdata.map((_, index) => (

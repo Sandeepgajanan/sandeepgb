@@ -1,6 +1,6 @@
 import React from "react";
 
-const Projectcard = ({ val }) => {
+const ProjectCard = ({ val }) => {
   return (
     <div className="relative group w-72 h-80   rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:scale-105">
       <img
@@ -36,4 +36,4 @@ const Projectcard = ({ val }) => {
   );
 };
 
-export default Projectcard;
+export default ProjectCard;
