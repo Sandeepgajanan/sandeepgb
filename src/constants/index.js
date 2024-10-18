@@ -32,6 +32,7 @@ export const skilldata = [
   { img: "/node.png", text: "NODE JS" },
   { img: "/express.png", text: "EXPRESS JS" },
   { img: "/mongo.png", text: "MONGODB" },
+  { img: "/three.svg", text: "THREE JS" },
   { img: "/api.png", text: "API" },
   { img: "/sql.png", text: "SQL" },
   { img: "/git.png", text: "GIT" },
@@ -180,5 +181,20 @@ export const projectdata = [
       "MongoDB",
     ],
     link: "https://github.com/Sandeepgajanan/Pinterest",
+  },
+  {
+    id: 9,
+    title: "Bonda-Factory",
+    description: "Creative website for tender coconut juice",
+    image: "/bottle.png",
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "JavaScript (ES6)",
+      "SheryJs",
+      "GSAP",
+      "Locomotive Scroll",
+    ],
+    link: "https://sandeepgajanan.github.io/bondafactory/",
   },
 ];
