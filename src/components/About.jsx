@@ -22,8 +22,9 @@ const About = () => {
       color: "#e94560",
       stagger: 0.8,
       scrollTrigger: {
-        trigger: ".ex",
-        scroller: "body",
+
+        scroller: "body", 
+        trigger: "section",
         start: "top 60%",
         end: "bottom bottom",
         scrub: 2,
@@ -34,7 +35,7 @@ const About = () => {
 
   return (
     <section className="detail w-full h-screen select-none  max-sm:h-[80vh] max-sm:py-5 max-sm:px-3">
-      <div className="ex max-w-screen-lg mx-auto h-full w-full flex items-center justify-between pb-10 max-sm:flex-col max-sm:justify-start max-sm:gap-16">
+      <div className="ex max-w-screen-lg mx-auto h-full w-full flex items-center justify-between max-sm:flex-col max-sm:justify-start max-sm:gap-16">
         <Eye />
 
         <div className="expand text-[#fff] text-center ">

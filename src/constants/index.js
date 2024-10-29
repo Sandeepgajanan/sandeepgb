@@ -1,7 +1,7 @@
 export const loaderlines = ["who is", "sandeep", "? ? ?"];
 export const aboutcontent = [
   "Hi, I'm Sandeep Bhandari",
-  "I'm a passionate Software Developer",
+  "I'm a passionate Web Developer",
   "I specialize in creating efficient and scalable web applications",
   "With a keen eye for detail and a love for clean code",
   "Let's build something amazing together!",
@@ -32,7 +32,7 @@ export const skilldata = [
   { img: "/node.png", text: "NODE JS" },
   { img: "/express.png", text: "EXPRESS JS" },
   { img: "/mongo.png", text: "MONGODB" },
-  { img: "/three.svg", text: "THREE JS" },
+  { img: "/three.png", text: "THREE JS" },
   { img: "/api.png", text: "API" },
   { img: "/sql.png", text: "SQL" },
   { img: "/git.png", text: "GIT" },

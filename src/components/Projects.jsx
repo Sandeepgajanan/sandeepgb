@@ -1,28 +1,16 @@
-import React, { useState } from "react";
 import { projectdata } from "../constants";
 import ProjectCard from "./ProjectCard";
 import Heading from "./Heading";
 
 const Projects = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-
   return (
-    <section id="projects" className="w-full min-h-screen py-5">
-      <Heading text={"My Projects"} />
-      <div className="flex flex-col items-center justify-center">
-        <ProjectCard val={projectdata[activeIndex]} />
-
-        <div className="flex justify-center mt-8">
-          {projectdata.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setActiveIndex(index)}
-              className={`w-3 h-3 rounded-full mx-1 ${
-                index === activeIndex ? "bg-purple-500" : "bg-gray-400"
-              }`}
-            />
-          ))}
-        </div>
+    <section className="w-full h-screen flex flex-col py-5 max-sm:py-3 ">
+      <Heading text={"Featured Projects"} />
+      <p className="text-gray-400 mb-4  text-center">← Scroll to see more →</p>
+      <div className="mt-10 flex flex-nowrap gap-8 overflow-x-auto w-full px-5 max-sm:snap-x max-sm:snap-mandatory max-sm:mt-2" id="projects">
+        {projectdata.map((item, index) => (
+          <ProjectCard val={item} key={index} />
+        ))}
       </div>
     </section>
   );

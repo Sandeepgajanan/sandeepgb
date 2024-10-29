@@ -9,7 +9,7 @@ const Loader = () => {
     const body = document.body;
     body.style.overflow = "hidden";
     body.style.height = "100vh";
-    body.style.position = "fixed";
+    body.style.position = "fixed"; 
     body.style.width = "100%";
     const tl = gsap.timeline();
     const lines = loaderRef.current.querySelectorAll("h1");
@@ -36,11 +36,13 @@ const Loader = () => {
       y: "-100%",
       duration: 1,
       ease: "power2.inOut",
-    }).eventCallback("onComplete", () => {
-      body.style.overflow = "";
-      body.style.height = "";
-      body.style.position = "";
-      body.style.width = "";
+      onComplete: () => {
+        loaderRef.current.style.display = "none";
+        body.style.overflow = "";
+        body.style.height = "";
+        body.style.position = "";
+        body.style.width = "";
+      }
     });
 
     return () => {

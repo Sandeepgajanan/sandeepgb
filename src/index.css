@@ -41,7 +41,9 @@
     );
   }
 }
-
+#projects::-webkit-scrollbar {
+  display: none;
+}
 ::-webkit-scrollbar {
   width: 8px;
   background-color: rgba(0, 0, 0, 0.918);
@@ -54,4 +56,7 @@
 
 * {
   cursor: none;
+}
+::selection{
+  color: yellowgreen;
 }
