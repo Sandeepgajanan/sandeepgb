@@ -1,12 +1,13 @@
 import React from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { useEffect } from "react";
 import { aboutcontent } from "../constants";
-import Eye from "./Eye";
-gsap.registerPlugin(ScrollTrigger);
+
+import { useGSAP } from "@gsap/react";
+
 const About = () => {
-  useEffect(() => {
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
     const allH1 = document.querySelectorAll(".expand h1");
     allH1.forEach((elem) => {
       let clutter = "";
@@ -17,38 +18,36 @@ const About = () => {
       });
       elem.innerHTML = clutter;
     });
-
     gsap.to(".expand h1 span", {
-      color: "#e94560",
-      stagger: 0.8,
+      color: "white",
+      stagger: 2,
+      duration: 0.5,
       scrollTrigger: {
-
-        scroller: "body", 
         trigger: "section",
-        start: "top 60%",
-        end: "bottom bottom",
-        scrub: 2,
+        start: "top 30%",
+        end: "bottom -80%",
+        pin:true,
+        scrub: 3,
         ease: "power3.inOut",
+ 
       },
     });
-  }, []);
+  })
 
   return (
-    <section className="detail w-full h-screen select-none  max-sm:h-[80vh] max-sm:py-5 max-sm:px-3">
-      <div className="ex max-w-screen-lg mx-auto h-full w-full flex items-center justify-between max-sm:flex-col max-sm:justify-start max-sm:gap-16">
-        <Eye />
+    <section className="detail w-full h-screen  max-sm:h-fit max-sm:pb-5 ">
 
-        <div className="expand text-[#fff] text-center ">
+        <div className="expand text-zinc-700 text-center">
           {aboutcontent.map((item, index) => (
             <h1
               key={index}
-              className="font-[ff] text-[3vw] max-sm:text-[6.5vw] max-sm:leading-[6vw] max-sm:pt-1"
+              className="font-[var] text-[3vw] tracking-wider max-sm:text-[7vw]  max-sm:leading-[7vw]  max-sm:pt-1"
             >
               {item}
             </h1>
           ))}
         </div>
-      </div>
+      
     </section>
   );
 };

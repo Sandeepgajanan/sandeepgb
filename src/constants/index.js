@@ -1,10 +1,9 @@
-export const loaderlines = ["who is", "sandeep", "? ? ?"];
 export const aboutcontent = [
-  "Hi, I'm Sandeep Bhandari",
-  "I'm a passionate Web Developer",
-  "I specialize in creating efficient and scalable web applications",
-  "With a keen eye for detail and a love for clean code",
-  "Let's build something amazing together!",
+  "Hey there! I'm Sandeep",
+  "MCA graduate, creative web developer",
+  "I craft digital experiences through code", 
+  "Transforming ideas into interactive realities",
+  "Let's create experiences together"
 ];
 export const wrkdata = [
   {
@@ -104,36 +103,40 @@ export const projectdata = [
     title: "Premier",
     description:
       "A modern website that adapts to different screen sizes and devices.",
-    image: "/model.jpg",
     technologies: ["HTML5", "CSS3"],
     link: "https://sandeepgajanan.github.io/premier/",
   },
   {
     id: 2,
-    title: "Omni-Food",
-    description: "A food ordering site with smooth moving parts and effects.",
-    image: "/omni.jpg",
-    technologies: ["HTML5", "CSS3", "JavaScript (ES6)"],
-    link: "https://sandeepgajanan.github.io/Omni-food/",
+    title: "Equilibrium", 
+    description: "A visually appealing website with a well-balanced design.",
+    technologies: ["HTML5", "CSS3", "SheryJs"],
+    link: "https://sandeepgajanan.github.io/Equilibrium/",
   },
   {
     id: 3,
-    title: "Equilibrium",
-    description: "A visually appealing website with a well-balanced design.",
-    image: "/green.jpg",
-    technologies: ["HTML5", "CSS3", "SheryJs"],
-    link: "https://sandeepgajanan.github.io/Equilibrium/",
+    title: "Bonda-Factory",
+    description: "Creative website for tender coconut juice",
+    image: "/bottle.png", 
+    technologies: [
+      "HTML5",
+      "CSS3", 
+      "JavaScript (ES6)",
+      "SheryJs",
+      "GSAP",
+      "Locomotive Scroll",
+    ],
+    link: "https://sandeepgajanan.github.io/bondafactory/",
   },
   {
     id: 4,
     title: "Obeys-recreate",
     description:
       "A recreation of a popular website featuring intricate animations.",
-    image: "/obey.jpg",
     technologies: [
       "HTML5",
       "CSS3",
-      "JavaScript (ES6)",
+      "JavaScript (ES6)", 
       "SheryJs",
       "GSAP",
       "Locomotive Scroll",
@@ -145,7 +148,6 @@ export const projectdata = [
     title: "Atharva-Resort",
     description:
       "An upcoming resort and adventure site with smooth animations.",
-    image: "/resort.jpg",
     technologies: ["React", "GSAP"],
     link: "https://atharva-red.vercel.app/",
   },
@@ -154,7 +156,6 @@ export const projectdata = [
     title: "Ochi-Home",
     description:
       "A striking recreation of a design agency's homepage with unique scroll effects.",
-    image: "/ochi.jpg",
     technologies: ["React", "Locomotive Scroll"],
     link: "https://ochi-sandeep-bhandaris-projects.vercel.app/",
   },
@@ -163,38 +164,29 @@ export const projectdata = [
     title: "Refokus-Home",
     description:
       "A dynamic recreation of a website featuring fluid animations and transitions.",
-    image: "/refokus.jpg",
     technologies: ["React", "Framer Motion"],
     link: "https://refokus-gilt.vercel.app/",
   },
   {
     id: 8,
+    title: "Oct 23",
+    description:
+      "A Presentation of the story",
+    technologies: ["React", "Framer Motion", "Lenis"],
+    link: "https://oct23.vercel.app/",
+  },
+  {
+    id: 9,
     title: "Pin-It",
     description:
       "A Pinterest-inspired platform enabling image sharing and discovery.",
-    image: "/pin.jpg",
     technologies: [
       "Node.js",
-      "Express.js",
+      "Express.js", 
       "Multer",
       "Flash Messages",
       "MongoDB",
     ],
     link: "https://github.com/Sandeepgajanan/Pinterest",
-  },
-  {
-    id: 9,
-    title: "Bonda-Factory",
-    description: "Creative website for tender coconut juice",
-    image: "/bottle.png",
-    technologies: [
-      "HTML5",
-      "CSS3",
-      "JavaScript (ES6)",
-      "SheryJs",
-      "GSAP",
-      "Locomotive Scroll",
-    ],
-    link: "https://sandeepgajanan.github.io/bondafactory/",
   },
 ];
