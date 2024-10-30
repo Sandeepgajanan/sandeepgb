@@ -25,6 +25,7 @@ const Loader = () => {
       characters.forEach(char => {
         const span = document.createElement('span');
         span.textContent = char;
+        span.style.opacity = 0;
         line.appendChild(span);
       });
     });
@@ -77,7 +78,7 @@ const Loader = () => {
       {loaderlines.map((item, index) => (
         <h1
           key={index}
-          className="text-[5vw] tracking-wider font-[var] max-sm:text-[8vw] mb-4">
+          className="text-[5vw] tracking-wider font-[var] max-sm:text-[8vw] mb-4 ">
           {item}
         </h1>
       ))}

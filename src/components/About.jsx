@@ -24,30 +24,30 @@ const About = () => {
       duration: 0.5,
       scrollTrigger: {
         trigger: "section",
-        start: "top 30%",
-        end: "bottom -80%",
-        pin:true,
+        start: "top 0%",
+        end: "bottom -100%",
+        pin: true,
         scrub: 3,
         ease: "power3.inOut",
- 
+
       },
     });
   })
 
   return (
-    <section className="detail w-full h-screen  max-sm:h-fit max-sm:pb-5 ">
+    <section className="detail w-full h-screen  pt-36 max-sm:pt-10 ">
 
-        <div className="expand text-zinc-700 text-center">
-          {aboutcontent.map((item, index) => (
-            <h1
-              key={index}
-              className="font-[var] text-[3vw] tracking-wider max-sm:text-[7vw]  max-sm:leading-[7vw]  max-sm:pt-1"
-            >
-              {item}
-            </h1>
-          ))}
-        </div>
-      
+      <div className="expand text-zinc-700 text-center">
+        {aboutcontent.map((item, index) => (
+          <h1
+            key={index}
+            className="font-[var] text-[3vw] tracking-wider max-sm:text-[7vw]  max-sm:leading-[7vw]  max-sm:pt-1"
+          >
+            {item}
+          </h1>
+        ))}
+      </div>
+
     </section>
   );
 };
