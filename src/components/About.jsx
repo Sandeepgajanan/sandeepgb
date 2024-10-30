@@ -29,25 +29,22 @@ const About = () => {
         pin: true,
         scrub: 3,
         ease: "power3.inOut",
-
       },
     });
   })
 
   return (
-    <section className="detail w-full h-screen  pt-36 max-sm:pt-10 ">
-
+    <section className="max-w-screen-xl mx-auto detail w-full h-screen flex items-center justify-center">
       <div className="expand text-zinc-700 text-center">
         {aboutcontent.map((item, index) => (
           <h1
             key={index}
-            className="font-[var] text-[3vw] tracking-wider max-sm:text-[7vw]  max-sm:leading-[7vw]  max-sm:pt-1"
+            className="font-[var] tracking-wider text-[7vw] leading-[7vw] pt-1 sm:text-[3vw] sm:leading-normal sm:pt-0"
           >
             {item}
           </h1>
         ))}
       </div>
-
     </section>
   );
 };

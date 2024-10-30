@@ -38,8 +38,8 @@ const Hero = () => {
   });
 
   return (
-    <div className=" max-w-screen-xl mx-auto w-full h-[90vh] flex flex-col  justify-center">
-      <h1 ref={headingRef} className="text-[6vw] leading-[7vw] text-center uppercase font-[var] z-10 text-white  max-sm:text-[9.5vw] max-sm:leading-[10vw] max-sm:tracking-wide select-none">
+    <div className=" max-w-screen-xl mx-auto w-full h-[90vh] flex flex-col  justify-center max-sm:pt-14 ">
+      <h1 ref={headingRef} className="text-[6vw] leading-[7vw] text-center uppercase font-[var] z-10 text-white  max-sm:text-[9vw] max-sm:leading-[10vw] max-sm:tracking-wide select-none">
         I'm an engineer <br /> without engineering
       </h1>
 
@@ -47,7 +47,7 @@ const Hero = () => {
         Crafting digital experiences with creativity and precision
       </p>
 
-      <div ref={scrollRef} className="flex justify-center">
+      <div ref={scrollRef} className="flex justify-center max-sm:mt-12">
           <div className="text-gray-400 rotate-90 text-sm tracking-[0.2em] whitespace-nowrap select-none">
             SCROLL
           </div>
