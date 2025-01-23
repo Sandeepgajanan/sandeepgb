@@ -27,11 +27,10 @@
   border-radius: 10px;
 }
 
-* {
-  cursor: none;
 
-}
+body{
 
-::selection {
-  color: yellowgreen;
+    font-family: "ff",sans-serif;
+    user-select: none;
+  
 }

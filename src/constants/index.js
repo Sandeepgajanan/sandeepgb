@@ -157,7 +157,7 @@ export const projectdata = [
     description:
       "A striking recreation of a design agency's homepage with unique scroll effects.",
     technologies: ["React", "Locomotive Scroll"],
-    link: "https://ochi-sandeep-bhandaris-projects.vercel.app/",
+    link: "https://ochi-jet.vercel.app/",
   },
   {
     id: 7,
